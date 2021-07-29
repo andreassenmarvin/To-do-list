@@ -33,11 +33,13 @@
         </div>
         <div class="form">
         <form>
+            <p id="form-success">Your message has been received</p>
+            <button type="reset" class="btn btn-default" id="success-btn">Cancel</button>
             <h3 id="form-header">Subscribe to get updates</h3>
-        <input type="text" placeholder="Enter your name"  class="name form-control" required>
-        <input type="email" placeholder="Enter your email" class="email form-control" required>
-        <textarea placeholder="Your feedback" class="message form-control"></textarea>
-        <input type="submit" value="subscribe" id="submit">
+        <input type="text" placeholder="Enter your name"  id="name">
+        <input type="email" placeholder="Enter your email" id="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
+        <textarea placeholder="Your feedback" id="message"></textarea>
+        <input type="submit" value="Submit" id="submit">
         </form>
         </div>
     </section>

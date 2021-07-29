@@ -144,7 +144,7 @@ i{
     text-align: center;
 }
 
-.email{
+#email{
     border: 1px solid black;
     border-radius: 5px;
     outline: none;
@@ -156,18 +156,23 @@ i{
     letter-spacing: 0.1em;
 }
 
-.name{
+#name{
     border: 1px solid black;
     border-radius: 5px;
     outline: none;
     width: 350px;
     height: 40px;
-    margin: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
     padding: 10px;
     letter-spacing: 0.1em;
 }
 
-.message{
+#name:focus{
+    outline: none;
+}
+
+#message{
     border: 1px solid black;
     border-radius: 5px;
     outline: none;
@@ -176,6 +181,10 @@ i{
     margin-left: 20px;
     padding: 10px;
     letter-spacing: 0.1em;
+}
+
+#message:focus{
+    outline: none;
 }
 
 #submit{
@@ -196,4 +205,34 @@ i{
 #submit:hover{
     background:black;
     color: white;
+}
+
+#form-success{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    background-color:#d1e7dd;
+    color:#0f5132;
+    border-color: #badbcc;
+    border-radius: 5px;
+    width: 260px;
+    height:70px;
+    font-size: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+#success-btn{
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    margin-top: -70px;
+    margin-right: 5px;
+    background-color:#d1e7dd;
+    color:#0f5132;
 }
