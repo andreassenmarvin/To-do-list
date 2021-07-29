@@ -4,11 +4,12 @@ body{
 
 #bg-image{
     position: fixed;
-    width: 100%;
+    width: 99vw;
 }
 
 .nav{
     position: sticky;
+    width: 99vw;
     background-color: transparent;
     box-shadow: 2px 2px 9px;
     display: flex;
@@ -20,20 +21,21 @@ body{
 
 #logo{    
     position: absolute;
-    font-size: 26px;
+    font-size: 2vw;
     margin-top: -22px;
     
 }
 
 #nav-header{
-    font-size: 45px;
+    font-size:3.8vw;
     font-weight: bold;
     letter-spacing: 0.1em;
     margin-left: 100px;
    
 }
 
-i{
+i{  
+    font-size: 1vw;
     padding: 15px;
     color: black;
 }
@@ -70,8 +72,8 @@ i{
 
 #card{
     position: relative;
-    width: 90%;
-    height: 600px;
+    width: 90vw;
+    height: 40vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,20 +89,21 @@ i{
 
 #card-title{
     width: 300px;
-    font-size: 95px;
+    font-size: 5.5vw;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     text-align: center;
 }
 
 #card-p{
-    font-size: 25px;
+    font-size: 2vw;
 }
 
 .sec{
     position: relative;
     background-color: white;
-    width: 100%;
-    height: 550px;
+    width: 99vw;
+    height: 40vw;
     margin-top: 100px;
 }
 
@@ -116,7 +119,7 @@ i{
 }
 
 #about-header{
-    font-size: 50px;
+    font-size: 3.5vw;
     font-weight: bold;
     letter-spacing: 0.2em;
     margin-top: 20px;
@@ -124,14 +127,14 @@ i{
 
 #about-p{
     letter-spacing: 0.15em;
-    font-size: 30px;
-    width:550px;
+    font-size: 2vw;
+    width:34vw;
 }
 
 .form{
     position: absolute; 
-    width: 400px;
-    height: 420px;
+    width: 26vw;
+    height: 29vw;
     padding-top: 30px;
     margin-top: 100px;
     right: 120px;
@@ -235,4 +238,71 @@ i{
     margin-right: 5px;
     background-color:#d1e7dd;
     color:#0f5132;
+}
+
+.sec2{
+    position: relative;
+    width: 99vw;
+    height: 1300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-top: 1px solid black;
+}
+
+#sec2-header{
+    font-size: 60px;
+    margin-top: 50px;
+}
+
+#sec2-p{
+    letter-spacing: 0.15em;
+    font-size: 30px;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+#quote{
+    letter-spacing: 0.15em;
+    font-size: 30px;
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 30%;
+    text-align:center;
+}
+
+#quote2{
+    position: absolute;
+    letter-spacing: 0.15em;
+    font-size: 30px;
+    width: 50%;
+    margin-top: -110px;
+    margin-left: 50px;
+    right: 0;
+    width: 30%;
+    text-align:center;
+}
+
+#img-pun{
+    margin-top: 50px;
+    width: 60vw;
+    height: 45vw;
+}
+
+#sec2-btn{
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 30px;
+    width: 150px;
+    font-size: 1.4vw;
+    transition: all ease-in-out .4s;
+}
+
+#sec2-btn:hover{
+    background: black;
+    color: white;   
 }
