@@ -243,7 +243,7 @@ i{
 .sec2{
     position: relative;
     width: 99vw;
-    height: 1300px;
+    height: 1350px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -305,4 +305,22 @@ i{
 #sec2-btn:hover{
     background: black;
     color: white;   
+}
+
+#footer{
+    position: relative;
+    width: 99vw;
+    height: 6.5vw;
+    background-color: white;
+    margin-top: 25vw
+}
+
+#footer-p{
+    position: absolute;
+    display: block;
+    width: 17vw;
+    margin-left: 40vw;
+    margin-top: 1.5vw;
+    font-size: 1.5vw;
+    text-align: center;
 }
