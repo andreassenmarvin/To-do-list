@@ -1,3 +1,24 @@
 body{
-    font-family: 'Ferrum', sans-serif;
+    font-family: 'DecoTech', sans-serif;
+    background-image: url("https://i1.wp.com/www.gleescape.com/wp-content/uploads/2020/06/Sofa2-scaled.jpg?fit=2560%2C1707&ssl=1");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#navbar{
+    position: sticky;
+}
+
+#logo{    
+    position: absolute;
+    color: orange;
+    font-size: 26px;
+    margin-top: -22px;
+    margin-left: 30px;
+}
+
+#nav-header{
+    margin: auto;
+    font-size: 45px;
+    letter-spacing: 0.1em;
 }
