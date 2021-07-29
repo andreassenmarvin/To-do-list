@@ -3,7 +3,7 @@ var nav = document.getElementById("navbar")
 
 var scrollWindow = $(function(){
     $(window).scroll(function(){
-        if ($(this).scrollTop() > 300){
+        if ($(this).scrollTop() > 100){
             $(nav).css("top", 0).css("background-color", "white");
             $(nav).addClass("nav-animation");
         }
