@@ -3,22 +3,64 @@ body{
     background-image: url("https://i1.wp.com/www.gleescape.com/wp-content/uploads/2020/06/Sofa2-scaled.jpg?fit=2560%2C1707&ssl=1");
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100vW;
 }
 
-#navbar{
+.nav{
     position: sticky;
+    background-color: transparent;
+    box-shadow: 2px 2px 9px;
+    display: flex;
+    align-items: center;
+    transition: all ease-in-out 0.7s;
 }
+
 
 #logo{    
     position: absolute;
-    color: orange;
     font-size: 26px;
     margin-top: -22px;
-    margin-left: 30px;
+    
 }
 
 #nav-header{
-    margin: auto;
     font-size: 45px;
     letter-spacing: 0.1em;
+    margin-left: 100px;
+   
+}
+
+i{
+    padding: 15px;
+    color: black;
+}
+
+.nav-animation{
+    animation:navbar 1s;
+}
+
+@keyframes navbar{
+    from{
+        height: 0px;
+    }
+
+    to{
+        height: 90px;
+    }
+
+}
+
+.animation-nav{
+    animation:navbar-nav 1s;
+}
+
+@keyframes navbar-nav{
+    from{
+        height: 0px;
+    }
+
+    to{
+        height: 90px;
+    }
+
 }
