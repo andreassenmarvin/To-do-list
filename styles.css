@@ -1,9 +1,10 @@
 body{
     font-family: 'DecoTech', sans-serif;
-    background-image: url("https://i1.wp.com/www.gleescape.com/wp-content/uploads/2020/06/Sofa2-scaled.jpg?fit=2560%2C1707&ssl=1");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vW;
+}
+
+#bg-image{
+    position: fixed;
+    width: 100%;
 }
 
 .nav{
@@ -13,7 +14,7 @@ body{
     display: flex;
     align-items: center;
     transition: all ease-in-out 0.7s;
-    z-index: 2;
+    z-index: 3;
 }
 
 
@@ -26,6 +27,7 @@ body{
 
 #nav-header{
     font-size: 45px;
+    font-weight: bold;
     letter-spacing: 0.1em;
     margin-left: 100px;
    
@@ -67,16 +69,20 @@ i{
 }
 
 #card{
-    width: 500px;
+    position: relative;
+    width: 90%;
     height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 150px;
+    margin: auto;
+    margin-top: 90px;
     padding: 20px;
+    z-index: 2;
     background: transparent;
     border-radius: 0;
-    box-shadow: 2px 2px 10px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 10px;
 }
 
 #card-title{
@@ -88,4 +94,106 @@ i{
 
 #card-p{
     font-size: 25px;
+}
+
+.sec{
+    position: relative;
+    background-color: white;
+    width: 100%;
+    height: 550px;
+    margin-top: 100px;
+}
+
+.about{
+    position: absolute;
+    left: 0;
+    margin-left: 100px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+
+#about-header{
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    margin-top: 20px;
+}
+
+#about-p{
+    letter-spacing: 0.15em;
+    font-size: 30px;
+    width:550px;
+}
+
+.form{
+    position: absolute; 
+    width: 400px;
+    height: 420px;
+    padding-top: 30px;
+    margin-top: 100px;
+    right: 120px;
+    border: 1px solid black;
+    overflow: auto;
+}
+
+#form-header{
+    font-size: 35px;
+    text-align: center;
+}
+
+.email{
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+    width: 350px;
+    height: 40px;
+    margin: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    letter-spacing: 0.1em;
+}
+
+.name{
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+    width: 350px;
+    height: 40px;
+    margin: 20px;
+    padding: 10px;
+    letter-spacing: 0.1em;
+}
+
+.message{
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+    width: 350px;
+    height: 100px;
+    margin-left: 20px;
+    padding: 10px;
+    letter-spacing: 0.1em;
+}
+
+#submit{
+    width: 150px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+    color: black;
+    font-size: 20px;
+    transition: all ease-in-out .4s;
+    margin-left: 120px;
+    margin-top: 40px;
+}
+
+#submit:hover{
+    background:black;
+    color: white;
 }
