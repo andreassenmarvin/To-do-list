@@ -76,12 +76,12 @@ i {
 #card {
     position: relative;
     width: 90vw;
-    height: 40vw;
+    height: 35vw;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
-    margin-top: 90px;
+    margin-top: 70px;
     padding: 20px;
     z-index: 2;
     background: transparent;
@@ -90,15 +90,15 @@ i {
 }
 
 #card-title {
-    width: 300px;
-    font-size: 5.5vw;
+    width: 365px;
+    font-size: 5vw;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     text-align: center;
 }
 
 #card-p {
-    font-size: 2vw;
+    font-size: 1.6vw;
 }
 
 .sec {
@@ -106,7 +106,7 @@ i {
     background-color: white;
     width: 99vw;
     height: 40vw;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 .about {
