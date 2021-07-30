@@ -1,13 +1,16 @@
-body{
+body {
     font-family: 'DecoTech', sans-serif;
+    width: 100%;
 }
 
-#bg-image{
+#bg-image {
     position: fixed;
-    width: 99vw;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
 }
 
-.nav{
+.nav {
     position: sticky;
     width: 99vw;
     background-color: transparent;
@@ -19,58 +22,58 @@ body{
 }
 
 
-#logo{    
+#logo {
     position: absolute;
     font-size: 2vw;
     margin-top: -22px;
-    
+
 }
 
-#nav-header{
-    font-size:3.8vw;
+#nav-header {
+    font-size: 3.8vw;
     font-weight: bold;
     letter-spacing: 0.1em;
     margin-left: 100px;
-   
+
 }
 
-i{  
+i {
     font-size: 1vw;
     padding: 15px;
     color: black;
 }
 
-.nav-animation{
-    animation:navbar 1s;
+.nav-animation {
+    animation: navbar 1s;
 }
 
-@keyframes navbar{
-    from{
+@keyframes navbar {
+    from {
         height: 0px;
     }
 
-    to{
+    to {
         height: 90px;
     }
 
 }
 
-.animation-nav{
-    animation:navbar-nav 1s;
+.animation-nav {
+    animation: navbar-nav 1s;
 }
 
-@keyframes navbar-nav{
-    from{
+@keyframes navbar-nav {
+    from {
         height: 0px;
     }
 
-    to{
+    to {
         height: 90px;
     }
 
 }
 
-#card{
+#card {
     position: relative;
     width: 90vw;
     height: 40vw;
@@ -83,11 +86,10 @@ i{
     z-index: 2;
     background: transparent;
     border-radius: 0;
-    border: 1px solid black;
-    box-shadow: 1px 1px 10px;
+    box-shadow: 1px 1px 7px;
 }
 
-#card-title{
+#card-title {
     width: 300px;
     font-size: 5.5vw;
     letter-spacing: 0.1em;
@@ -95,11 +97,11 @@ i{
     text-align: center;
 }
 
-#card-p{
+#card-p {
     font-size: 2vw;
 }
 
-.sec{
+.sec {
     position: relative;
     background-color: white;
     width: 99vw;
@@ -107,32 +109,32 @@ i{
     margin-top: 100px;
 }
 
-.about{
+.about {
     position: absolute;
     left: 0;
     margin-left: 100px;
     margin-top: 80px;
     display: flex;
     flex-direction: column;
-   
-    
+
+
 }
 
-#about-header{
+#about-header {
     font-size: 3.5vw;
     font-weight: bold;
     letter-spacing: 0.2em;
     margin-top: 20px;
 }
 
-#about-p{
+#about-p {
     letter-spacing: 0.15em;
     font-size: 2vw;
-    width:34vw;
+    width: 34vw;
 }
 
-.form{
-    position: absolute; 
+.form {
+    position: absolute;
     width: 26vw;
     height: 29vw;
     padding-top: 30px;
@@ -142,12 +144,12 @@ i{
     overflow: auto;
 }
 
-#form-header{
+#form-header {
     font-size: 35px;
     text-align: center;
 }
 
-#email{
+#email {
     border: 1px solid black;
     border-radius: 5px;
     outline: none;
@@ -159,7 +161,7 @@ i{
     letter-spacing: 0.1em;
 }
 
-#name{
+#name {
     border: 1px solid black;
     border-radius: 5px;
     outline: none;
@@ -171,11 +173,11 @@ i{
     letter-spacing: 0.1em;
 }
 
-#name:focus{
+#name:focus {
     outline: none;
 }
 
-#message{
+#message {
     border: 1px solid black;
     border-radius: 5px;
     outline: none;
@@ -186,11 +188,11 @@ i{
     letter-spacing: 0.1em;
 }
 
-#message:focus{
+#message:focus {
     outline: none;
 }
 
-#submit{
+#submit {
     width: 150px;
     height: 40px;
     border: 1px solid black;
@@ -205,28 +207,28 @@ i{
     margin-top: 40px;
 }
 
-#submit:hover{
-    background:black;
+#submit:hover {
+    background: black;
     color: white;
 }
 
-#form-success{
+#form-success {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center; 
-    background-color:#d1e7dd;
-    color:#0f5132;
+    text-align: center;
+    background-color: #d1e7dd;
+    color: #0f5132;
     border-color: #badbcc;
     border-radius: 5px;
     width: 260px;
-    height:70px;
+    height: 70px;
     font-size: 20px;
     margin: auto;
     margin-bottom: 20px;
 }
 
-#success-btn{
+#success-btn {
     position: absolute;
     width: 50px;
     height: 30px;
@@ -236,11 +238,11 @@ i{
     right: 0;
     margin-top: -70px;
     margin-right: 5px;
-    background-color:#d1e7dd;
-    color:#0f5132;
+    background-color: #d1e7dd;
+    color: #0f5132;
 }
 
-.sec2{
+.sec2 {
     position: relative;
     width: 99vw;
     height: 1350px;
@@ -251,12 +253,12 @@ i{
     border-top: 1px solid black;
 }
 
-#sec2-header{
+#sec2-header {
     font-size: 60px;
     margin-top: 50px;
 }
 
-#sec2-p{
+#sec2-p {
     letter-spacing: 0.15em;
     font-size: 30px;
     width: 50%;
@@ -264,17 +266,17 @@ i{
     margin: auto;
 }
 
-#quote{
+#quote {
     letter-spacing: 0.15em;
     font-size: 30px;
     width: 50%;
     margin-top: 50px;
     margin-left: 50px;
     width: 30%;
-    text-align:center;
+    text-align: center;
 }
 
-#quote2{
+#quote2 {
     position: absolute;
     letter-spacing: 0.15em;
     font-size: 30px;
@@ -283,16 +285,16 @@ i{
     margin-left: 50px;
     right: 0;
     width: 30%;
-    text-align:center;
+    text-align: center;
 }
 
-#img-pun{
+#img-pun {
     margin-top: 50px;
     width: 60vw;
     height: 45vw;
 }
 
-#sec2-btn{
+#sec2-btn {
     background: transparent;
     border: 1px solid black;
     border-radius: 5px;
@@ -302,20 +304,20 @@ i{
     transition: all ease-in-out .4s;
 }
 
-#sec2-btn:hover{
+#sec2-btn:hover {
     background: black;
-    color: white;   
+    color: white;
 }
 
-#footer{
+#footer {
     position: relative;
     width: 99vw;
-    height: 6.5vw;
+    height: 100px;
     background-color: white;
-    margin-top: 25vw
+    margin-top: 600px
 }
 
-#footer-p{
+#footer-p {
     position: absolute;
     display: block;
     width: 17vw;
@@ -323,4 +325,737 @@ i{
     margin-top: 1.5vw;
     font-size: 1.5vw;
     text-align: center;
+}
+
+
+
+
+
+
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    body {
+        width: 100%;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+
+    #logo {
+        font-size: 9px;
+        margin-top: -8px;
+    }
+
+    #nav-header {
+        font-size: 2.7vw;
+        letter-spacing: 0.04em;
+        margin-left: 70px;
+        margin-top: 12px;
+
+    }
+
+    i {
+        font-size: 1vw;
+        padding: 3px;
+    }
+
+    .nav-icons {
+        margin-top: -8px;
+    }
+
+
+    #card {
+        margin-top: 20px;
+    }
+
+    #card-title {
+        width: 125px;
+        font-size: 4vw;
+    }
+
+    #card-p {
+        font-size: 1vw;
+    }
+
+    .sec {
+        width: 100%;
+        height: 195px;
+        margin-top: 20px;
+    }
+
+    .about {
+        margin-left: 20px;
+        margin-top: 1px;
+    }
+
+    #about-header {
+        font-size: 2.5vw;
+        margin-top: 14px;
+    }
+
+    #about-p {
+        letter-spacing: 0.05em;
+        font-size: 1.5vw;
+        width: 24vw;
+    }
+
+    .form {
+        width: 120px;
+        height: 170px;
+        padding-top: 5px;
+        margin-top: 10px;
+    }
+
+    #form-header {
+        font-size: 9px;
+    }
+
+    #email {
+        width: 70px;
+        height: 17px;
+        padding: 5px;
+        font-size: 5px;
+        border-radius: 0;
+    }
+
+    #name {
+        width: 70px;
+        height: 17px;
+        padding: 5px;
+        font-size: 5px;
+        border-radius: 0;
+
+    }
+
+    #message {
+        width: 70px;
+        height: 25px;
+        margin-left: 20px;
+        padding: 5px;
+        font-size: 5px;
+        border-radius: 0;
+    }
+
+    #submit {
+        width: 35px;
+        height: 10px;
+        font-size: 5px;
+        margin-left: 40px;
+        margin-top: 1px;
+        border-radius: 0;
+    }
+
+    #form-success {
+        width: 30px;
+        height: 15px;
+        font-size: 2px;
+        margin-bottom: 5px;
+        border-radius: 1px;
+    }
+
+    #success-btn {
+        margin-top: -20px;
+        margin-right: 20px;
+        width: 13px;
+        height: 14px;
+        font-size: 4px;
+        border-radius: 1px;
+        padding: 1px;
+
+    }
+
+    .sec2 {
+        width: 100%;
+        height: 380px;
+    }
+
+    #sec2-header {
+        font-size: 17px;
+        margin-top: 10px;
+    }
+
+    #sec2-p {
+        letter-spacing: 0.05em;
+        font-size: 9px;
+        width: 20%;
+    }
+
+    #quote {
+        letter-spacing: 0.05em;
+        font-size: 9px;
+        width: 20%;
+    }
+
+    #quote2 {
+        letter-spacing: 0.05em;
+        font-size: 9px;
+        margin-top: -50px;
+        margin-right: 50px;
+        width: 20%;
+    }
+
+    #img-pun {
+        margin-top: 1px;
+        width: 20vw;
+        height: 20vw;
+    }
+
+    #sec2-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 6px;
+        width: 20px;
+        height: 1px;
+        font-size: 0.7vw;
+        border-radius: 1px;
+        padding-bottom: 3px;
+    }
+
+    #footer {
+        width: 100%;
+        height: 30px;
+        margin-top: 160px;
+    }
+
+    #footer-p {
+        font-size: 1.1vw;
+        width: 70px;
+    }
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    body {
+        width: 100%;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+
+    #logo {
+        font-size: 15px;
+        margin-top: -14px;
+    }
+
+    #nav-header {
+        font-size: 3vw;
+        letter-spacing: 0.1em;
+        margin-left: 110px;
+        margin-top: 12px;
+
+    }
+
+    i {
+        font-size: 1vw;
+        padding: 5px;
+    }
+
+
+    #card {
+        margin-top: 30px;
+    }
+
+    #card-title {
+        width: 135px;
+        font-size: 5vw;
+    }
+
+    #card-p {
+        font-size: 1vw;
+    }
+
+    .sec {
+        width: 100%;
+        height: 285px;
+        margin-top: 25px;
+    }
+
+    .about {
+        margin-left: 30px;
+        margin-top: 50px;
+    }
+
+    #about-header {
+        font-size: 3vw;
+        margin-top: 14px;
+    }
+
+    #about-p {
+        letter-spacing: 0.1em;
+        font-size: 2vw;
+        width: 32vw;
+    }
+
+    .form {
+        width: 200px;
+        height: 230px;
+        padding-top: 5px;
+        margin-top: 30px;
+        margin-right: -15vw;
+    }
+
+    #form-header {
+        font-size: 16px;
+    }
+
+    #email {
+        width: 150px;
+        height: 24px;
+        padding: 5px;
+        font-size: 9px;
+    }
+
+    #name {
+        width: 150px;
+        height: 24px;
+        padding: 5px;
+        font-size: 9px;
+    }
+
+    #message {
+        width: 150px;
+        height: 45px;
+        margin-left: 20px;
+        padding: 5px;
+        font-size: 9px;
+    }
+
+    #submit {
+        width: 65px;
+        height: 20px;
+        font-size: 9px;
+        margin-left: 65px;
+        margin-top: 5px;
+    }
+
+    #form-success {
+        width: 100px;
+        height: 20px;
+        font-size: 6px;
+        margin-bottom: 8px;
+    }
+
+    #success-btn {
+        margin-top: -28px;
+        width: 17px;
+        height: 17px;
+        font-size: 6px;
+
+    }
+
+    .sec2 {
+        width: 100%;
+        height: 450px;
+    }
+
+    #sec2-header {
+        font-size: 25px;
+        margin-top: 20px;
+    }
+
+    #sec2-p {
+        letter-spacing: 0.05em;
+        font-size: 13px;
+        width: 50%;
+    }
+
+    #quote {
+        letter-spacing: 0.05em;
+        font-size: 13px;
+        width: 30%;
+    }
+
+    #quote2 {
+        letter-spacing: 0.05em;
+        font-size: 13px;
+        margin-top: -40px;
+        margin-right: 50px;
+        width: 30%;
+    }
+
+    #img-pun {
+        margin-top: 20px;
+        width: 25vw;
+        height: 20vw;
+    }
+
+    #sec2-btn {
+        margin-top: 10px;
+        width: 50px;
+        font-size: 0.9vw;
+    }
+
+    #footer {
+        width: 100%;
+        height: 40px;
+        margin-top: 200px;
+    }
+
+    #footer-p {
+        font-size: 1.1vw;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    body {
+        width: 100%;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+
+    #logo {
+        font-size: 20px;
+        margin-top: -18px;
+    }
+
+    #nav-header {
+        font-size: 3.2vw;
+        letter-spacing: 0.1em;
+        margin-left: 110px;
+        margin-top: 14px;
+
+    }
+
+    i {
+        font-size: 1vw;
+        padding: 10px;
+    }
+
+
+    #card {
+        margin-top: 80px;
+    }
+
+    #card-title {
+        width: 250px;
+    }
+
+    #card-p {
+        font-size: 1.5vw;
+    }
+
+    .sec {
+        width: 100%;
+        height: 400px;
+        margin-top: 70px;
+    }
+
+    .about {
+        margin-left: 100px;
+        margin-top: 50px;
+
+    }
+
+    #about-header {
+        font-size: 3vw;
+        margin-top: 14px;
+    }
+
+    #about-p {
+        letter-spacing: 0.1em;
+        font-size: 2vw;
+        width: 32vw;
+    }
+
+    .form {
+        width: 250px;
+        height: 300px;
+        padding-top: 7px;
+        margin-top: 55px;
+    }
+
+    #form-header {
+        font-size: 25px;
+    }
+
+    #email {
+        width: 200px;
+        height: 30px;
+        padding: 7px;
+    }
+
+    #name {
+        width: 200px;
+        height: 30px;
+        padding: 7px;
+    }
+
+    #message {
+        width: 200px;
+        height: 70px;
+        margin-left: 20px;
+        padding: 7px;
+    }
+
+    #submit {
+        width: 85px;
+        height: 25px;
+        font-size: 16px;
+        margin-left: 90px;
+        margin-top: 5px;
+    }
+
+    #form-success {
+        width: 160px;
+        height: 40px;
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+
+    #success-btn {
+        margin-top: -40px;
+        width: 30px;
+        height: 20px;
+        font-size: 10px;
+
+    }
+
+    .sec2 {
+        width: 100%;
+        height: 680px;
+    }
+
+    #sec2-header {
+        font-size: 40px;
+        margin-top: 30px;
+    }
+
+    #sec2-p {
+        letter-spacing: 0.1em;
+        font-size: 20px;
+        width: 50%;
+    }
+
+    #quote {
+        letter-spacing: 0.1em;
+        font-size: 20px;
+        width: 30%;
+    }
+
+    #quote2 {
+        letter-spacing: 0.1em;
+        font-size: 20px;
+        margin-top: -85px;
+        margin-right: 50px;
+        width: 30%;
+    }
+
+    #img-pun {
+        margin-top: 20px;
+        width: 35vw;
+        height: 25vw;
+    }
+
+    #sec2-btn {
+        margin-top: 15px;
+        width: 100px;
+        font-size: 1.1vw;
+    }
+
+    #footer {
+        width: 100%;
+        height: 60px;
+        margin-top: 250px;
+    }
+
+    #footer-p {
+        position: absolute;
+        font-size: 1.3vw;
+    }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    body {
+        width: 100%;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+
+    #logo {
+        position: absolute;
+        font-size: 25px;
+        margin-top: -22px;
+
+    }
+
+    #nav-header {
+        font-size: 3.8vw;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        margin-left: 110px;
+        margin-top: 18px;
+
+    }
+
+    i {
+        font-size: 1.2vw;
+        padding: 12px;
+    }
+
+
+    #card {
+        margin-top: 85px;
+    }
+
+    #card-title {
+        width: 270px;
+    }
+
+    #card-p {
+        font-size: 2vw;
+    }
+
+    .sec {
+        width: 100%;
+        height: 450px;
+        margin-top: 90px;
+    }
+
+    .about {
+        margin-left: 100px;
+        margin-top: 70px;
+
+    }
+
+    #about-header {
+        margin-top: 18px;
+    }
+
+    #about-p {
+        letter-spacing: 0.15em;
+        font-size: 2vw;
+        width: 34vw;
+    }
+
+    .form {
+        width: 300px;
+        height: 300px;
+        padding-top: 5px;
+        margin-top: 85px;
+    }
+
+    #form-header {
+        font-size: 32px;
+    }
+
+    #email {
+        width: 250px;
+        height: 32px;
+        padding: 10px;
+    }
+
+    #name {
+        width: 250px;
+        height: 32px;
+        padding: 10px;
+    }
+
+    #message {
+        width: 250px;
+        height: 80px;
+        margin-left: 20px;
+        padding: 10px;
+    }
+
+    #submit {
+        width: 100px;
+        height: 30px;
+        font-size: 18px;
+        margin-left: 90px;
+        margin-top: 5px;
+    }
+
+    #form-success {
+        width: 170px;
+        height: 60px;
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    #success-btn {
+        width: 40px;
+        height: 25px;
+        margin-top: -70px;
+        margin-right: 8px;
+        font-size: 12px;
+
+    }
+
+    .sec2 {
+        width: 100%;
+        height: 930px;
+    }
+
+    #sec2-header {
+        font-size: 45px;
+        margin-top: 40px;
+    }
+
+    #sec2-p {
+        letter-spacing: 0.12em;
+        font-size: 25px;
+        width: 50%;
+    }
+
+    #quote {
+        letter-spacing: 0.12em;
+        font-size: 25px;
+        margin-top: 40px;
+        width: 30%;
+    }
+
+    #quote2 {
+        letter-spacing: 0.12em;
+        font-size: 25px;
+        margin-top: -110px;
+        width: 30%;
+    }
+
+    #img-pun {
+        margin-top: 30px;
+        width: 45vw;
+        height: 35vw;
+    }
+
+    #sec2-btn {
+        margin-top: 20px;
+        width: 120px;
+        font-size: 1.2vw;
+    }
+
+    #footer {
+        width: 100%;
+        height: 80px;
+        margin-top: 500px
+    }
+
+    #footer-p {
+        position: absolute;
+        font-size: 1.2vw;
+    }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    body {
+        width: 100%;
+    }
 }
