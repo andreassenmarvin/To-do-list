@@ -568,12 +568,12 @@ i {
     }
 
     #card-title {
-        width: 135px;
-        font-size: 5vw;
+        width: 140px;
+        font-size:3.7vw;
     }
 
     #card-p {
-        font-size: 1vw;
+        font-size: 1.2vw;
     }
 
     .sec {
