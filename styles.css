@@ -1,5 +1,5 @@
 body {
-    font-family: 'DecoTech', sans-serif;
+    font-family: 'Cormorant SC', serif;
     width: 100%;
 }
 
@@ -7,7 +7,8 @@ body {
     position: fixed;
     width: 100%;
     height: 100%;
-    opacity: 0.9;
+    opacity: 0.8;
+    filter: blur(1px);
 }
 
 .nav {
@@ -24,13 +25,13 @@ body {
 
 #logo {
     position: absolute;
-    font-size: 2vw;
+    font-size: 1.5vw;
     margin-top: -22px;
 
 }
 
 #nav-header {
-    font-size: 3.8vw;
+    font-size: 3.2vw;
     font-weight: bold;
     letter-spacing: 0.1em;
     margin-left: 100px;
@@ -38,7 +39,7 @@ body {
 }
 
 i {
-    font-size: 1vw;
+    font-size: 0.8vw;
     padding: 15px;
     color: black;
 }
@@ -91,14 +92,15 @@ i {
 
 #card-title {
     width: 365px;
-    font-size: 5vw;
+    font-size: 4vw;
+    font-weight: bold;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     text-align: center;
 }
 
 #card-p {
-    font-size: 1.6vw;
+    font-size: 1.3vw;
 }
 
 .sec {
@@ -121,7 +123,7 @@ i {
 }
 
 #about-header {
-    font-size: 3.5vw;
+    font-size: 2.8vw;
     font-weight: bold;
     letter-spacing: 0.2em;
     margin-top: 20px;
@@ -129,14 +131,14 @@ i {
 
 #about-p {
     letter-spacing: 0.15em;
-    font-size: 2vw;
+    font-size: 1.5vw;
     width: 34vw;
 }
 
 .form {
     position: absolute;
     width: 26vw;
-    height: 29vw;
+    height: 27vw;
     padding-top: 30px;
     margin-top: 100px;
     right: 120px;
@@ -145,7 +147,7 @@ i {
 }
 
 #form-header {
-    font-size: 35px;
+    font-size: 27px;
     text-align: center;
 }
 
@@ -201,7 +203,7 @@ i {
     cursor: pointer;
     background: transparent;
     color: black;
-    font-size: 20px;
+    font-size: 17px;
     transition: all ease-in-out .4s;
     margin-left: 120px;
     margin-top: 40px;
@@ -223,7 +225,7 @@ i {
     border-radius: 5px;
     width: 260px;
     height: 70px;
-    font-size: 20px;
+    font-size: 18px;
     margin: auto;
     margin-bottom: 20px;
 }
@@ -236,6 +238,7 @@ i {
     align-items: center;
     justify-content: center;
     right: 0;
+    font-size: 11px;
     margin-top: -70px;
     margin-right: 5px;
     background-color: #d1e7dd;
@@ -254,13 +257,14 @@ i {
 }
 
 #sec2-header {
-    font-size: 60px;
+    font-size: 2.8vw;
+    font-weight: bold;
     margin-top: 50px;
 }
 
 #sec2-p {
     letter-spacing: 0.15em;
-    font-size: 30px;
+    font-size: 1.5vw;
     width: 50%;
     text-align: center;
     margin: auto;
@@ -268,7 +272,7 @@ i {
 
 #quote {
     letter-spacing: 0.15em;
-    font-size: 30px;
+    font-size: 1.5vw;
     width: 50%;
     margin-top: 50px;
     margin-left: 50px;
@@ -279,7 +283,7 @@ i {
 #quote2 {
     position: absolute;
     letter-spacing: 0.15em;
-    font-size: 30px;
+    font-size: 1.5vw;
     width: 50%;
     margin-top: -110px;
     margin-left: 50px;
@@ -300,7 +304,7 @@ i {
     border-radius: 5px;
     margin-top: 30px;
     width: 150px;
-    font-size: 1.4vw;
+    font-size: 1.2vw;
     transition: all ease-in-out .4s;
 }
 
@@ -323,7 +327,7 @@ i {
     width: 17vw;
     margin-left: 40vw;
     margin-top: 1.5vw;
-    font-size: 1.5vw;
+    font-size: 1.1vw;
     text-align: center;
 }
 
@@ -481,7 +485,7 @@ i {
     #sec2-p {
         letter-spacing: 0.05em;
         font-size: 9px;
-        width: 20%;
+        width: 40%;
     }
 
     #quote {
@@ -664,7 +668,7 @@ i {
     #sec2-p {
         letter-spacing: 0.05em;
         font-size: 13px;
-        width: 50%;
+        width: 65%;
     }
 
     #quote {
@@ -753,7 +757,7 @@ i {
     }
 
     .about {
-        margin-left: 100px;
+        margin-left: 10px;
         margin-top: 50px;
 
     }
@@ -774,6 +778,7 @@ i {
         height: 300px;
         padding-top: 7px;
         margin-top: 55px;
+        right: 10px;
     }
 
     #form-header {
@@ -835,7 +840,7 @@ i {
     #sec2-p {
         letter-spacing: 0.1em;
         font-size: 20px;
-        width: 50%;
+        width: 80%;
     }
 
     #quote {
@@ -929,7 +934,7 @@ i {
     }
 
     .about {
-        margin-left: 100px;
+        margin-left: 20px;
         margin-top: 70px;
 
     }
@@ -949,6 +954,7 @@ i {
         height: 300px;
         padding-top: 5px;
         margin-top: 85px;
+        right: 20px;
     }
 
     #form-header {
@@ -1011,7 +1017,7 @@ i {
     #sec2-p {
         letter-spacing: 0.12em;
         font-size: 25px;
-        width: 50%;
+        width: 90%;
     }
 
     #quote {
