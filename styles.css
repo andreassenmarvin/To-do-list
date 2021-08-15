@@ -336,11 +336,72 @@ i {
     position: fixed;
     width: 100%;
     height: 100%;
-    opacity: 0.8;
 }
 
+.tasks-menu {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: cente;
+    background-color: white;
+    width: 20%;
+    height: 100%;
+    z-index: 5;
+    overflow: auto;
+}
 
+.body-overlay {
+    display: non;
+    position: fixed;
+    background: rgba(66, 64, 64, 0.6);
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
 
+#tasks-logo {
+    font-size: 18px;
+}
+
+.tmenu-head {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#tmenu-header {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#tasks-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 230px;
+    height: 45px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+#task-plus {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 23px;
+    color: white;
+}
+
+#task-btn-text {
+    display: flex;
+    font-family: serif;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+}
 
 
 
