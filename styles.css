@@ -385,21 +385,23 @@ i {
     height: 45px;
     margin: auto;
     margin-top: 20px;
+    border: 1px solid transparent;
     border-radius: 20px;
 }
 
 #task-plus {
     position: relative;
+    left: 5px;
     display: flex;
     align-items: center;
-    font-size: 23px;
+    font-size: 28px;
     color: white;
 }
 
 #task-btn-text {
     display: flex;
     font-family: serif;
-    font-size: 18px;
+    font-size: 17px;
     letter-spacing: 0.1em;
 }
 
