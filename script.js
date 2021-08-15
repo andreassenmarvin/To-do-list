@@ -70,4 +70,106 @@ $(function(){
         return true;
     });
 
+    // Task links toggle
+    $(".tshortcut-links").hide();
+    $(".tlist-links").hide();
+    $(".t-tags-links").hide();
+    $("#shortcut").click(function(){
+      $("#s-angle-down").toggle();
+      $("#s-angle-up").toggle();
+      $(".tshortcut-links").slideToggle();
+      $("#shortcut").css("background-color", "rgb(243, 243, 243)");
+      $("#calendar").css("background-color", "transparent");
+      $("#list").css("background-color", "transparent");
+      $("#tags").css("background-color", "transparent");
+    });
+
+    $("#calendar").click(function(){
+      $("#calendar").css("background-color", "rgb(243, 243, 243)");
+      $("#shortcut").css("background-color", "transparent");
+      $("#list").css("background-color", "transparent");
+      $("#tags").css("background-color", "transparent");
+    });
+
+    $("#list").click(function(){
+      $("#l-angle-down").toggle();
+      $("#l-angle-up").toggle();
+      $("#list-plus").show();
+      $(".tlist-links").slideToggle();
+      $("#list").css("background-color", "rgb(243, 243, 243)");
+      $("#calendar").css("background-color", "transparent");
+      $("#shortcut").css("background-color", "transparent");
+      $("#tags").css("background-color", "transparent");
+    });
+
+    $("#tags").click(function(){
+      $("#t-angle-down").toggle();
+      $("#t-angle-up").toggle();
+      $(".t-tags-links").slideToggle();
+      $("#tags").css("background-color", "rgb(243, 243, 243)");
+      $("#calendar").css("background-color", "transparent");
+      $("#shortcut").css("background-color", "transparent");
+      $("#list").css("background-color", "transparent");
+    });
+    
+    $("#list-plus").click(function(){
+      $("#add-tlist-links").slideDown();
+      $("#add-tlist-btn").slideDown();
+      $("#add-tlist-links").focus();
+
+        if ($("#add-tlist-links").val() === null || $("#add-tlist-links").val() === "") {
+          $(".add-tlist-btn").attr("disabled", true);
+          $(".add-tlist-btn").removeAttr("id");
+          $(".add-tlist-btn").removeClass("btn-primary");
+          $(".add-tlist-btn").addClass("input-empty");
+          $(".add-tlist-links").focus();
+          return false;
+        }
+  
+        else {
+          $(".add-tlist-btn").attr("disabled", false);
+          $(".add-tlist-btn").attr("id");
+          $(".add-tlist-btn").addClass("btn-primary");
+          $(".add-tlist-btn").removeClass("input-empty");
+          return true;
+        }
+    })
+
+    $("#add-tlist-links").on("input", function() {
+      if ($("#add-tlist-links").val() === null || $("#add-tlist-links").val() === "") {
+        $(".add-tlist-btn").attr("disabled", true);
+        $(".add-tlist-btn").removeAttr("id");
+        $(".add-tlist-btn").removeClass("btn-primary");
+        $(".add-tlist-btn").addClass("input-empty");
+        $(".add-tlist-links").focus();
+        return false;
+      }
+
+      else {
+        $(".add-tlist-btn").attr("disabled", false);
+        $(".add-tlist-btn").attr("id", "add-tlist-btn");
+        $(".add-tlist-btn").addClass("btn-primary");
+        $(".add-tlist-btn").removeClass("input-empty");
+        return true;
+      }
+    })
+
+    $(".add-tlist-btn").click(function(){
+    var listLinks = document.getElementById("add-tlist-links").value;
+
+      $("#add-tlist1").text(listLinks);
+      $("#add-tlist1").show();
+      $("#add-tlist-links").hide();
+      $(".add-tlist-btn").hide();
+      $("#list-plus").hide();
+      $("#list-edit").show();
+    })
+
+    $("#list-edit").click(function(){
+      $("#add-tlist1").hide();
+      $("#add-tlist-links").slideDown();
+      $("#add-tlist-btn").slideDown();
+      $("#add-tlist-links").focus();
+      $("#add-tlist-links").text(listLinks);
+    })
 })
