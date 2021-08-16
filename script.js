@@ -90,7 +90,7 @@ $(function () {
   $("#list").click(function () {
     $("#l-angle-down").toggle();
     $("#l-angle-up").toggle();
-    $("#list-plus").show();
+    $("#list-plus").toggle();
     $(".tlist-links").slideToggle();
     $("#list").css("background-color", "rgb(243, 243, 243)");
     $("#calendar").css("background-color", "transparent");

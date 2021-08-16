@@ -338,17 +338,54 @@ i {
     height: 100%;
 }
 
+.tasks-modal {
+    position: fixed;
+    display: block;
+    margin: auto;
+    background-color: white;
+    width: 38%;
+    height: 60%;
+    z-index: 5;
+    border-radius: 10px;
+}
+
+.tmodal-head {
+    display: flex;
+    border-bottom: 1px solid lightgray;
+}
+
+#tmodal-title {
+    margin: auto;
+    font-size: 25px;
+}
+
+#task-modal-x {
+    width: 9%;
+    padding: 7px;
+    text-align: center;
+    border-radius: 100%;
+    font-size: 25px;
+    float: right;
+    transition: all ease-in-out .3s;
+}
+
+#task-modal-x:hover {
+    background-color: rgb(243, 243, 243);
+    cursor: pointer;
+}
+
 .tasks-menu {
     position: fixed;
     background-color: white;
-    width: 20%;
+    width: 22%;
     height: 100%;
     z-index: 5;
     overflow: auto;
+    box-shadow: 1px 1px 7px;
 }
 
 .body-overlay {
-    display: non;
+    display: none;
     position: fixed;
     background: rgba(66, 64, 64, 0.6);
     width: 100%;
