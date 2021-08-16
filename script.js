@@ -182,7 +182,12 @@ $(function () {
   });
 
   $("#task-modal-x").click(function () {
-    $(".tasks-modal").fadeOut();
+    $(".tasks-modal").slideUp();
+    $(".body-overlay").fadeOut();
+  });
+
+  $(".body-overlay").click(function () {
+    $(".tasks-modal").slideUp();
     $(".body-overlay").fadeOut();
   });
 
