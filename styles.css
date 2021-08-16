@@ -338,14 +338,24 @@ i {
     height: 100%;
 }
 
+.body-overlay {
+    display: none;
+    position: fixed;
+    background: rgba(66, 64, 64, 0.6);
+    width: 100%;
+    height: 100%;
+    z-index: 6;
+}
+
 .tasks-modal {
     position: fixed;
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin: auto;
     background-color: white;
-    width: 38%;
-    height: 60%;
-    z-index: 5;
+    width: 40%;
+    height: 65%;
+    z-index: 7;
     border-radius: 10px;
 }
 
@@ -374,6 +384,68 @@ i {
     cursor: pointer;
 }
 
+.tmodal-body {
+    display: flex;
+    
+}
+
+.tmodal-left {
+    width: 70%;
+    border-right: 1px solid lightgray;
+}
+
+.tmodal-right {
+    width: 20%;
+}
+
+.tmodal-r-list {
+    margin: 20px;
+}
+
+#tmodal-p-category {
+    color: blue;
+    cursor: pointer;
+}
+
+#tmodal-input {
+    width: 360px;
+    height: 45px;
+    margin: 20px;
+    background-color: rgb(243, 243, 243);
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#tmodal-input::placeholder {
+    font-size: 22px;
+    opacity: 0.6;
+}
+
+#tmodal-input:focus {
+    outline: none;
+}
+
+.tmodal-notes {
+    margin: 20px;
+}
+
+#tmodal-p {
+    font-size: 18px;
+    color: rgb(61, 59, 59);
+}
+
+#tmodal-textarea {
+    background-color: rgb(243, 243, 243);
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#tmodal-textarea:focus {
+    outline: none;
+}
+
 .tasks-menu {
     position: fixed;
     background-color: white;
@@ -382,15 +454,6 @@ i {
     z-index: 5;
     overflow: auto;
     box-shadow: 1px 1px 7px;
-}
-
-.body-overlay {
-    display: none;
-    position: fixed;
-    background: rgba(66, 64, 64, 0.6);
-    width: 100%;
-    height: 100%;
-    z-index: 4;
 }
 
 #tasks-logo {

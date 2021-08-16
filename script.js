@@ -164,4 +164,15 @@ $(function () {
     $("#add-tlist-links").focus();
     $("#add-tlist-links").text(listLinks);
   })
+
+  // Tasks modal
+  $("#tasks-btn").click(function(){
+    $(".tasks-modal").fadeIn();
+    $(".body-overlay").fadeIn();
+  })
+
+  $("#task-modal-x").click(function(){
+    $(".tasks-modal").fadeOut();
+    $(".body-overlay").fadeOut();
+  })
 })

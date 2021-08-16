@@ -18,12 +18,27 @@
     <div class="body-overlay"></div>
     <img src="https://i1.wp.com/www.gleescape.com/wp-content/uploads/2020/06/Sofa2-scaled.jpg?fit=2560%2C1707&ssl=1"
         alt="house" class="tasks-bg" />
-        <div class="tasks-modal modal">
-            <div class="tmodal-head">
-                <h2 id="tmodal-title">Add tasks</h2>
+    <div class="tasks-modal modal">
+        <div class="tmodal-head">
+            <h2 id="tmodal-title">Add tasks</h2>
             <i class="bi bi-x" id="task-modal-x"></i>
-            </div>
         </div>
+        <div class="tmodal-body">
+            <div class="tmodal-left">
+                <input type="text" placeholder="I want to..." name="text" id="tmodal-input">
+                <div class="tmodal-notes">
+                    <p id="tmodal-p">Notes</p>
+                    <textarea name="textarea" id="tmodal-textarea" cols="38" rows="8"></textarea>
+                </div>
+            </div>
+                <div class="tmodal-right">
+                    <div class="tmodal-r-list">
+                    <p id="tmodal-p-list">List</p>
+                    <p id="tmodal-p-category">Personal</p>
+                    </div>
+                </div>
+        </div>
+    </div>
     <section class="tasks-menu">
         <div class="tmenu-top">
             <div class="tmenu-head">
