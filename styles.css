@@ -385,7 +385,7 @@ i {
 
 .tmodal-body {
     display: flex;
-    
+
 }
 
 .tmodal-left {
@@ -556,7 +556,8 @@ i {
 }
 
 #addtask-btn:hover {
-    background-color: #f5f3f3;;
+    background-color: #f5f3f3;
+    ;
 }
 
 .tasks-menu {
@@ -607,7 +608,7 @@ i {
 #task-plus {
     position: relative;
     left: 5px;
-    display: flex;#0080ff
+    display: flex;
     font-size: 28px;
     color: white;
 }
