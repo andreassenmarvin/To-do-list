@@ -354,9 +354,8 @@ i {
     margin: auto;
     background-color: white;
     width: 40%;
-    height: 65%;
+    height: 67%;
     z-index: 7;
-    border-radius: 10px;
 }
 
 .tmodal-head {
@@ -402,13 +401,96 @@ i {
     margin: 20px;
 }
 
+#tmodal-p-list {
+    font-size: 20px;
+}
+
 #tmodal-p-category {
-    color: blue;
+    color: #0080ff;
     cursor: pointer;
+    font-size: 15px;
+}
+
+.tmodal-remind {
+    margin: 40px 0 0 20px;
+}
+
+#tmodal-p-remind {
+    width: 100px;
+    font-size: 20px;
+}
+
+.task-remind:focus {
+    outline: none;
+}
+
+.remind-btn {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    background-color: rgb(243, 243, 243);
+    color: black;
+    font-family: serif;
+    font-size: 15px;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 0;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+    outline: none;
+}
+
+.remind-btn-active {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    background-color: #0080ff;
+    color: white;
+    border: 1px solid transparent;
+    font-family: serif;
+    font-size: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+    outline: none;
+}
+
+.remind-bell {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    left: 4px;
+}
+
+.remind-bell-active {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    left: 4px;
+    color: white;
+}
+
+.remind-btn:hover {
+    background-color: transparent;
+}
+
+.tmodal-error {
+    width: 375px;
+    height: 45px;
+    margin: 20px;
+    background-color: rgb(243, 243, 243);
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
 }
 
 #tmodal-input {
-    width: 360px;
+    width: 375px;
     height: 45px;
     margin: 20px;
     background-color: rgb(243, 243, 243);
@@ -444,6 +526,37 @@ i {
 
 #tmodal-textarea:focus {
     outline: none;
+}
+
+#addtask-btn {
+    height: 55px;
+    font-family: serif;
+    font-size: 18px;
+    border: 1px solid transparent;
+    background-color: transparent;
+    box-shadow: 2px 2px 12px lightgray;
+    color: #0080ff;
+    outline: none;
+    cursor: pointer;
+    margin-top: 18px;
+}
+
+.addtask-error {
+    background-color: transparent;
+    box-shadow: 2px 2px 12px lightgray;
+    color: rgb(202, 199, 199);
+    height: 55px;
+    font-family: serif;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: not-allowed;
+    margin-top: 18px;
+}
+
+#addtask-btn:hover {
+    background-color: #f5f3f3;;
 }
 
 .tasks-menu {

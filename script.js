@@ -18,7 +18,7 @@ $(function () {
       $(nav).removeClass("nav-animation");
       $(nav).addClass("animation-nav");
     }
-  })
+  });
 
   $(success).hide();
   $("#success-btn").hide();
@@ -58,7 +58,7 @@ $(function () {
       $(email).css("border", "1px solid black");
       return true;
     }
-  })
+  });
 
   $("#success-btn").click(function () {
     $(success).fadeOut();
@@ -128,7 +128,7 @@ $(function () {
       $(".add-tlist-btn").removeClass("input-empty");
       return true;
     }
-  })
+  });
 
   $("#add-tlist-links").on("input", function () {
     if ($("#add-tlist-links").val() === null || $("#add-tlist-links").val() === "") {
@@ -145,7 +145,7 @@ $(function () {
       $(".add-tlist-btn").removeClass("input-empty");
       return true;
     }
-  })
+  });
 
   $(".add-tlist-btn").click(function () {
     var listLinks = document.getElementById("add-tlist-links").value;
@@ -155,7 +155,7 @@ $(function () {
     $(".add-tlist-btn").hide();
     $("#list-plus").hide();
     $("#list-edit").show();
-  })
+  });
 
   $("#list-edit").click(function () {
     $("#add-tlist1").hide();
@@ -163,16 +163,132 @@ $(function () {
     $("#add-tlist-btn").slideDown();
     $("#add-tlist-links").focus();
     $("#add-tlist-links").text(listLinks);
-  })
+  });
 
   // Tasks modal
-  $("#tasks-btn").click(function(){
+  $(".tasks-modal").hide();
+  $("#tasks-btn").click(function () {
     $(".tasks-modal").fadeIn();
     $(".body-overlay").fadeIn();
-  })
+    $(".tmodal-input").focus();
 
-  $("#task-modal-x").click(function(){
+    if ($(".tmodal-input").val() === null || $(".tmodal-input").val() === "") {
+      $(".addtask-btn").attr("disabled", true);
+      $(".addtask-btn").removeAttr("id");
+      $(".addtask-btn").addClass("addtask-error")
+      $(".tmodal-input").focus();
+      return false;
+    }
+  });
+
+  $("#task-modal-x").click(function () {
     $(".tasks-modal").fadeOut();
     $(".body-overlay").fadeOut();
+  });
+
+
+  // Task reminder buttons
+
+  $("#r-tomorrow").click(function () {
+    $(this).removeClass("remind-btn");
+    $(this).addClass("remind-btn-active");
+    $("#t-bell").removeClass("remind-bell");
+    $("#t-bell").addClass("remind-bell-active");
+    $("#n-w-bell").addClass("remind-bell");
+    $("#n-w-bell").removeClass("remind-bell-active");
+    $("#c-bell").addClass("remind-bell");
+    $("#c-bell").removeClass("remind-bell-active");
+    $("#s-bell").addClass("remind-bell");
+    $("#s-bell").removeClass("remind-bell-active");
+    $("#r-n-week").addClass("remind-btn");
+    $("#r-n-week").removeClass("remind-btn-active");
+    $("#r-custom").addClass("remind-btn");
+    $("#r-custom").removeClass("remind-btn-active");
+    $("#r-someday").addClass("remind-btn");
+    $("#r-someday").removeClass("remind-btn-active");
+  });
+
+  $("#r-n-week").click(function () {
+    $(this).removeClass("remind-btn");
+    $(this).addClass("remind-btn-active");
+    $("#n-w-bell").removeClass("remind-bell");
+    $("#n-w-bell").addClass("remind-bell-active");
+    $("#t-bell").addClass("remind-bell");
+    $("#t-bell").removeClass("remind-bell-active");
+    $("#c-bell").addClass("remind-bell");
+    $("#c-bell").removeClass("remind-bell-active");
+    $("#s-bell").addClass("remind-bell");
+    $("#s-bell").removeClass("remind-bell-active");
+    $("#r-tomorrow").addClass("remind-btn");
+    $("#r-tomorrow").removeClass("remind-btn-active");
+    $("#r-custom").addClass("remind-btn");
+    $("#r-custom").removeClass("remind-btn-active");
+    $("#r-someday").addClass("remind-btn");
+    $("#r-someday").removeClass("remind-btn-active");
+  });
+
+  $("#r-custom").click(function () {
+    $(this).removeClass("remind-btn");
+    $(this).addClass("remind-btn-active");
+    $("#c-bell").removeClass("remind-bell");
+    $("#c-bell").addClass("remind-bell-active");
+    $("#t-bell").addClass("remind-bell");
+    $("#t-bell").removeClass("remind-bell-active");
+    $("#n-w-bell").addClass("remind-bell");
+    $("#n-w-bell").removeClass("remind-bell-active");
+    $("#s-bell").addClass("remind-bell");
+    $("#s-bell").removeClass("remind-bell-active");
+    $("#r-tomorrow").addClass("remind-btn");
+    $("#r-tomorrow").removeClass("remind-btn-active");
+    $("#r-n-week").addClass("remind-btn");
+    $("#r-n-week").removeClass("remind-btn-active");
+    $("#r-someday").addClass("remind-btn");
+    $("#r-someday").removeClass("remind-btn-active");
+  });
+
+  $("#r-someday").click(function () {
+    $(this).removeClass("remind-btn");
+    $(this).addClass("remind-btn-active");
+    $("#s-bell").removeClass("remind-bell");
+    $("#s-bell").addClass("remind-bell-active");
+    $("#t-bell").addClass("remind-bell");
+    $("#t-bell").removeClass("remind-bell-active");
+    $("#n-w-bell").addClass("remind-bell");
+    $("#n-w-bell").removeClass("remind-bell-active");
+    $("#c-bell").addClass("remind-bell");
+    $("#c-bell").removeClass("remind-bell-active");
+    $("#r-tomorrow").addClass("remind-btn");
+    $("#r-tomorrow").removeClass("remind-btn-active");
+    $("#r-n-week").addClass("remind-btn");
+    $("#r-n-week").removeClass("remind-btn-active");
+    $("#r-custom").addClass("remind-btn");
+    $("#r-custom").removeClass("remind-btn-active");
+  });
+
+  // Tasks form validation
+  $(".task-form").submit(function (event) {
+    event.preventDefault();
+
+    if ($(".tmodal-input").val() === null || $(".tmodal-input").val() === "") {
+      $(".tmodal-input").removeAttr("id");
+      $(".tmodal-input").addClass("tmodal-error");
+      $(".tmodal-input").focus();
+      $("#addtask-btn").attr("disabled", true);
+      return false;
+    }
+  });
+
+  $(".tmodal-input").on("input", function () {
+    if ($(".tmodal-input").val() === null || $(".tmodal-input").val() === "") {
+      $(".addtask-btn").attr("disabled", true);
+      $(".addtask-btn").removeAttr("id");
+      $(".addtask-btn").addClass("addtask-error");
+      $(".tmodal-input").focus();
+      return false;
+    } else {
+      $(".addtask-btn").attr("disabled", false);
+      $(".addtask-btn").attr("id", "addtask-btn");
+      $(".addtask-btn").removeClass("addtask-error");
+    }
   })
-})
+});

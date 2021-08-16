@@ -25,19 +25,35 @@
         </div>
         <div class="tmodal-body">
             <div class="tmodal-left">
-                <input type="text" placeholder="I want to..." name="text" id="tmodal-input">
-                <div class="tmodal-notes">
-                    <p id="tmodal-p">Notes</p>
-                    <textarea name="textarea" id="tmodal-textarea" cols="38" rows="8"></textarea>
-                </div>
+                <form class="task-form">
+                    <input type="text" placeholder="I want to..." name="text" class="tmodal-input" id="tmodal-input">
+                    <div class="tmodal-notes">
+                        <p id="tmodal-p">Notes</p>
+                        <textarea name="textarea" id="tmodal-textarea" cols="42" rows="8"></textarea>
+                    </div>
             </div>
-                <div class="tmodal-right">
-                    <div class="tmodal-r-list">
+            <div class="tmodal-right">
+                <div class="tmodal-r-list">
                     <p id="tmodal-p-list">List</p>
                     <p id="tmodal-p-category">Personal</p>
+                </div>
+                <div class="tmodal-remind">
+                    <p id="tmodal-p-remind">Remind me</p>
+                    <div>
+                        <button type="button" class="remind-btn task-remind" id="r-tomorrow"><i
+                                class="bi bi-bell remind-bell" id="t-bell"></i>Tomorrow</button>
+                        <button type="button" class="remind-btn task-remind" id="r-n-week"><i
+                                class="bi bi-bell remind-bell" id="n-w-bell"></i>Next week</button>
+                        <button type="button" class="remind-btn task-remind" id="r-custom"><i
+                                class="bi bi-bell remind-bell" id="c-bell"></i>Custom</button>
+                        <button type="button" class="remind-btn task-remind" id="r-someday"><i
+                                class="bi bi-bell remind-bell" id="s-bell"></i>Someday</button>
                     </div>
                 </div>
+            </div>
         </div>
+        <button type="submit" class="addtask-btn" id="addtask-btn">Add task</button>
+        </form>
     </div>
     <section class="tasks-menu">
         <div class="tmenu-top">
