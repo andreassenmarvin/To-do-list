@@ -295,5 +295,37 @@ $(function () {
       $(".addtask-btn").attr("id", "addtask-btn");
       $(".addtask-btn").removeClass("addtask-error");
     }
-  })
+  });
+
+  if ($("#quick-input").val() === null || $("#quick-input").val() === "") {
+    $("#arrow-circle-up").prop("disabled", true);
+    $("#arrow-circle-up").removeClass("arrow-circle-up");
+    $("#arrow-circle-up").addClass("arrow-up-error");
+  } else {
+    $("#arrow-circle-up").prop("disabled", false);
+    $("#arrow-circle-up").addClass("arrow-circle-up");
+    $("#arrow-circle-up").removeClass("arrow-up-error");
+  }
+
+
+  $("#quick-input").on("input", function () {
+    if ($(this).val() === null || $(this).val() === "") {
+      $("#arrow-circle-up").prop("disabled", true);
+      $("#arrow-circle-up").removeClass("arrow-circle-up");
+      $("#arrow-circle-up").addClass("arrow-up-error");
+    } else {
+      $("#arrow-circle-up").prop("disabled", false);
+      $("#arrow-circle-up").addClass("arrow-circle-up");
+      $("#arrow-circle-up").removeClass("arrow-up-error");
+    }
+  });
+
+  $(".t-tags-links a").click(function(){
+    $("#task-top-head").html("Priority").css("color", "blue")
+  });
+
+  $("#arrow-circle-up").click(function(){
+    var taskQuick = document.getElementById("quick-input").value;
+    $(".my-tasks").append("<li>" + taskQuick + "</li>");
+  });
 });
