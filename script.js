@@ -5,6 +5,7 @@ var username = document.getElementById("name");
 var email = document.getElementById("email");
 var message = document.getElementById("message");
 var submit = document.getElementById("submit");
+
 //Navbar white when 100px above top
 $(function () {
   $(window).scroll(function () {
@@ -320,12 +321,15 @@ $(function () {
     }
   });
 
-  $(".t-tags-links a").click(function(){
-    $("#task-top-head").html("Priority").css("color", "blue")
+  $(".t-tags-links a").click(function () {
+    $("#task-top-head").html("Priority").css("color", "blue");
   });
 
-  $("#arrow-circle-up").click(function(){
+  $("#arrow-circle-up").click(function () {
     var taskQuick = document.getElementById("quick-input").value;
-    $(".my-tasks").append("<li>" + taskQuick + "</li>");
+    $(".my-tasks").append("<li><input type = checkbox  id=quick-add-input>" + taskQuick + "</li>");
+    $(".quick-add-form").trigger("reset");
   });
+  
+ 
 });
