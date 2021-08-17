@@ -359,14 +359,37 @@ i {
     z-index: 7;
 }
 
+#list-modal {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-left: 900px;
+    background-color: white;
+    width: 25%;
+    height: 30%;
+    z-index: 8;
+}
+
 .tmodal-head {
     display: flex;
+    border-bottom: 1px solid lightgray;
+}
+
+.lmodal-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid lightgray;
 }
 
 #tmodal-title {
     margin: auto;
     font-size: 25px;
+}
+
+#lmodal-title {
+    font-size: 20px;
 }
 
 #task-modal-x {
@@ -379,6 +402,26 @@ i {
     transition: all ease-in-out .3s;
 }
 
+#l-modal-x {
+    width: 9%;
+    padding: 6px;
+    border-radius: 100%;
+    font-size: 20px;
+    transition: all ease-in-out .3s;
+}
+
+#l-modal-x:hover {
+    background-color: rgb(243, 243, 243);
+    cursor: pointer;
+}
+
+
+.lmodal-list li {
+    width: 100px;
+    list-style: none;
+    margin-left: -50px;
+}
+
 #task-modal-x:hover {
     background-color: rgb(243, 243, 243);
     cursor: pointer;
@@ -387,6 +430,24 @@ i {
 .tmodal-body {
     display: flex;
 
+}
+
+.lmodal-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lmodal-personal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+    padding: 2px;
+}
+
+.lmodal-personal input[type="checkbox"] {
+    margin-left: 250px;
+    cursor: pointer;
 }
 
 .tmodal-left {
@@ -891,7 +952,6 @@ i {
     flex-direction: column;
     margin: 20px;
     font-size: 20px;
-    overflow: auto;
 }
 
 .my-tasks li {
@@ -901,9 +961,6 @@ i {
     height: 45px;
     margin: 10px;
     list-style: none;
-    border: 1px solid rgb(196, 191, 191);
-    border-radius: 8px;
-    overflow: auto;
 }
 
 #quick-add-input {
@@ -911,6 +968,10 @@ i {
     cursor: pointer;
 }
 
+#task-add-input {
+    margin: 10px;
+    cursor: pointer;
+}
 
 
 /* Extra small devices (portrait phones, less than 576px) */

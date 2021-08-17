@@ -282,6 +282,14 @@ $(function () {
       $("#addtask-btn").attr("disabled", true);
       return false;
     }
+    else {
+      var task = document.getElementById("tmodal-input").value;
+      var notes = document.getElementById("tmodal-textarea").value;
+      $(".my-tasks").append("<li><input type = checkbox  id=task-add-input>" + task + "<br/>" + notes + "</li>");
+      $(".quick-add-form").trigger("reset");
+      $(".tasks-modal").slideUp();
+      $(".body-overlay").fadeOut();
+    }
   });
 
   $(".tmodal-input").on("input", function () {
