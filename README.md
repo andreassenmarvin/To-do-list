@@ -2,10 +2,15 @@
 #### This is a web app that assists the user to set to do task lists and enables them to keep track of their progress.
 #### By **Marvin Macharia**
 ## Description
-![Website image](/Assets/README/scr1.png)
-![Website image](/Assets/README/scr2.png)
-![Website image](/Assets/README/scr3.png)
-![Website image](/Assets/README/scr4.png)
+![Website image](/Assets/README/s1.png)
+![Website image](/Assets/README/s2.png)
+![Website image](/Assets/README/s3.png)
+![Website image](/Assets/README/s4.png)
+![Website image](/Assets/README/s5.png)
+![Website image](/Assets/README/s6.png)
+![Website image](/Assets/README/s7.png)
+![Website image](/Assets/README/s8.png)
+![Website image](/Assets/README/s9.png)
 ## Setup/Installation Requirements
 * Fork/Clone the repository
 ```
