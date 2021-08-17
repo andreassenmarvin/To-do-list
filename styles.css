@@ -373,7 +373,7 @@ i {
     display: flex;
     flex-direction: column;
     margin: auto;
-    margin-left: 900px;
+    margin-left: 920px;
     background-color: white;
     width: 25%;
     height: 30%;
@@ -891,6 +891,13 @@ i {
     margin: auto;
 }
 
+#quick-add-head {
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
 .task-section {
     position: fixed;
     display: flex;
@@ -961,7 +968,9 @@ i {
     position: absolute;
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    font-family: serif;
+    text-transform: capitalize;
+    margin-top: 50px;
     font-size: 20px;
 }
 
@@ -982,6 +991,17 @@ i {
 #task-add-input {
     margin: 10px;
     cursor: pointer;
+}
+
+#calendar-frame {
+    position: absolute;
+    width: 33%;
+    height: 80%;
+    margin-top: 120px;
+    margin-left: 950px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: auto;
 }
 
 

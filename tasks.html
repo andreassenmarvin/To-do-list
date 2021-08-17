@@ -57,6 +57,14 @@
         </form>
     </div>
 
+    <section class="g-calendar">
+        <div id="g-calendar">
+            <iframe id="calendar-frame"
+                src="https://calendar.google.com/calendar/embed?"
+                style="border: 0;padding:10px" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+    </section>
+
     <section class="list-modal">
         <div class="modal" id="list-modal">
             <div class="lmodal-head">
@@ -66,24 +74,25 @@
 
             <div class="lmodal-body">
                 <ul class="lmodal-list">
-                    <div class="lmodal-personal"><li>Personal</li> 
-                    <input type="radio" name="list" value="personal" id="p-input">
+                    <div class="lmodal-personal">
+                        <li>Personal</li>
+                        <input type="radio" name="list" value="personal" id="p-input">
                     </div>
                     <div class="lmodal-personal">
-                    <li>Work</li>
-                    <input type="radio" name="list"  value="work" id="work-input">
+                        <li>Work</li>
+                        <input type="radio" name="list" value="work" id="work-input">
                     </div>
                     <div class="lmodal-personal">
-                    <li>Shopping List</li>                  
-                    <input type="radio" name="list"  value="shop" id="s-list-input">
+                        <li>Shopping List</li>
+                        <input type="radio" name="list" value="shop" id="s-list-input">
                     </div>
                     <div class="lmodal-personal">
-                    <li>Additional</li>
-                    <input type="radio" name="list"  value="add" id="add-input">
+                        <li>Additional</li>
+                        <input type="radio" name="list" value="add" id="add-input">
                     </div>
                 </ul>
-                </div>
             </div>
+        </div>
         </div>
     </section>
 
@@ -101,9 +110,9 @@
             <li id="shortcut">Shortcut<i class="bi bi-caret-down angle-down" id="s-angle-down"></i>
                 <i class="bi bi-caret-up angle-up" id="s-angle-up"></i></li>
             <div class="tshortcut-links">
-                <a href="#">Today</a>
-                <a href="#">Next 7 days</a>
-                <a href="#">All tasks</a>
+                <a href="#task-section" id="s-today">Today</a>
+                <a href="#task-section" id="s-week">Next 7 days</a>
+                <a href="#task-section" id="s-all">All tasks</a>
             </div>
             <li id="list">List <i class="bi bi-caret-down angle-down" id="l-angle-down"></i>
                 <i class="bi bi-caret-up angle-up" id="l-angle-up"></i>
@@ -133,7 +142,8 @@
         </div>
     </section>
 
-    <section class="task-section">
+    <section class="task-section" id="task-section">
+        <h2 id="quick-add-head"></h2>
         <div class="my-tasks">
         </div>
     </section>

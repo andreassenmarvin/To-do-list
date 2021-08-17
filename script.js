@@ -81,11 +81,13 @@ $(function () {
     $("#tags").css("background-color", "transparent");
   });
 
+  $("#calendar-frame").hide();
   $("#calendar").click(function () {
     $("#calendar").css("background-color", "rgb(243, 243, 243)");
     $("#shortcut").css("background-color", "transparent");
     $("#list").css("background-color", "transparent");
     $("#tags").css("background-color", "transparent");
+    $("#calendar-frame").slideToggle();
   });
 
   $("#list").click(function () {
@@ -151,6 +153,7 @@ $(function () {
   $(".add-tlist-btn").click(function () {
     var listLinks = document.getElementById("add-tlist-links").value;
     $("#add-tlist1").text(listLinks);
+    $("#quick-add-head").text(listLinks);
     $("#add-tlist1").show();
     $("#add-tlist-links").hide();
     $(".add-tlist-btn").hide();
@@ -205,14 +208,20 @@ $(function () {
       $(".list-modal").fadeOut();
       $(".list-modal-overlay").fadeOut();
       $("#tmodal-p-category").html("Personal");
+      $("#quick-add-head").html("Personal");
+      $("#quick-input").focus();
     } else if ($(this).attr("value") === "work") {
       $(".list-modal").fadeOut();
       $(".list-modal-overlay").fadeOut();
       $("#tmodal-p-category").html("Work");
+      $("#quick-add-head").html("Work");
+      $("#quick-input").focus();
     } else if ($(this).attr("value") === "shop") {
       $(".list-modal").fadeOut();
       $(".list-modal-overlay").fadeOut();
       $("#tmodal-p-category").html("Shopping-list");
+      $("#quick-add-head").html("Shopping-list");
+      $("#quick-input").focus();
     } else if ($(this).attr("value") === "add") {
       $(".list-modal").fadeOut();
       $(".list-modal-overlay").fadeOut();
@@ -366,6 +375,22 @@ $(function () {
     $("#arrow-circle-up").removeClass("arrow-up-error");
   }
 
+  $("#quick-input").on("click", function () {
+    $(".list-modal").fadeIn();
+    $(".list-modal-overlay").fadeIn();
+  })
+
+  $("#quick-input").on("focus", function(){
+    if ($(this).val() === null || $(this).val() === "") {
+      $("#arrow-circle-up").prop("disabled", true);
+      $("#arrow-circle-up").removeClass("arrow-circle-up");
+      $("#arrow-circle-up").addClass("arrow-up-error");
+    } else {
+      $("#arrow-circle-up").prop("disabled", false);
+      $("#arrow-circle-up").addClass("arrow-circle-up");
+      $("#arrow-circle-up").removeClass("arrow-up-error");
+    }
+  })
 
   $("#quick-input").on("input", function () {
     if ($(this).val() === null || $(this).val() === "") {
