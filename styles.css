@@ -408,7 +408,9 @@ i {
 #tmodal-p-category {
     color: #0080ff;
     cursor: pointer;
+    font-family: serif;
     font-size: 15px;
+    margin-top: -15px;
 }
 
 .tmodal-remind {
@@ -533,6 +535,7 @@ i {
     font-family: serif;
     font-size: 18px;
     border: 1px solid transparent;
+    border-top: 1px solid lightgray;
     background-color: transparent;
     box-shadow: 2px 2px 12px lightgray;
     color: #0080ff;
@@ -543,7 +546,6 @@ i {
 
 .addtask-error {
     background-color: transparent;
-    box-shadow: 2px 2px 12px lightgray;
     color: rgb(202, 199, 199);
     height: 55px;
     font-family: serif;
@@ -551,6 +553,7 @@ i {
     outline: none;
     border: 1px solid transparent;
     border-radius: 5px;
+    box-shadow: 2px 2px 15px;
     cursor: not-allowed;
     margin-top: 18px;
 }
