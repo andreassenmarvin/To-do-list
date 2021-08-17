@@ -192,9 +192,57 @@ $(function () {
     $(".body-overlay").fadeOut();
   });
 
+  // Lists modal
+  $(".list-modal").hide();
+  $("#tmodal-p-category").click(function () {
+    $(".list-modal").fadeIn();
+    $(".list-modal-overlay").fadeIn();
+    $("#p-input").prop("checked", true);
+  })
+
+  $("input[type=radio]").change(function () {
+    if ($(this).attr("value") === "personal") {
+      $(".list-modal").fadeOut();
+      $(".list-modal-overlay").fadeOut();
+      $("#tmodal-p-category").html("Personal");
+    } else if ($(this).attr("value") === "work") {
+      $(".list-modal").fadeOut();
+      $(".list-modal-overlay").fadeOut();
+      $("#tmodal-p-category").html("Work");
+    } else if ($(this).attr("value") === "shop") {
+      $(".list-modal").fadeOut();
+      $(".list-modal-overlay").fadeOut();
+      $("#tmodal-p-category").html("Shopping-list");
+    } else if ($(this).attr("value") === "add") {
+      $(".list-modal").fadeOut();
+      $(".list-modal-overlay").fadeOut();
+      $(".tasks-modal").slideUp();
+      $(".body-overlay").fadeOut();
+      $("#l-angle-down").toggle();
+      $("#l-angle-up").toggle();
+      $("#list-plus").toggle();
+      $(".tlist-links").slideToggle();
+      $("#list").css("background-color", "rgb(243, 243, 243)");
+      $("#calendar").css("background-color", "transparent");
+      $("#shortcut").css("background-color", "transparent");
+      $("#tags").css("background-color", "transparent");
+      $("#add-tlist-links").slideDown();
+      $("#add-tlist-btn").slideDown();
+      $("#add-tlist-links").focus();
+    }
+  });
+
+  $("#l-modal-x").click(function () {
+    $(".list-modal").fadeOut();
+    $(".list-modal-overlay").fadeOut();
+  });
+
+  $(".list-modal-overlay").click(function () {
+    $(".list-modal").fadeOut();
+    $(".list-modal-overlay").fadeOut();
+  });
 
   // Task reminder buttons
-
   $("#r-tomorrow").click(function () {
     $(this).removeClass("remind-btn");
     $(this).addClass("remind-btn-active");
@@ -281,14 +329,14 @@ $(function () {
       $(".tmodal-input").focus();
       $("#addtask-btn").attr("disabled", true);
       return false;
-    }
-    else {
+    } else {
       var task = document.getElementById("tmodal-input").value;
       var notes = document.getElementById("tmodal-textarea").value;
       $(".my-tasks").append("<li><input type = checkbox  id=task-add-input>" + task + "<br/>" + notes + "</li>");
       $(".quick-add-form").trigger("reset");
       $(".tasks-modal").slideUp();
       $(".body-overlay").fadeOut();
+      $(".task-form").trigger("reset");
     }
   });
 
@@ -306,6 +354,8 @@ $(function () {
     }
   });
 
+
+  // Add tasks
   if ($("#quick-input").val() === null || $("#quick-input").val() === "") {
     $("#arrow-circle-up").prop("disabled", true);
     $("#arrow-circle-up").removeClass("arrow-circle-up");
@@ -338,6 +388,6 @@ $(function () {
     $(".my-tasks").append("<li><input type = checkbox  id=quick-add-input>" + taskQuick + "</li>");
     $(".quick-add-form").trigger("reset");
   });
-  
- 
+
+
 });
