@@ -380,7 +380,7 @@ $(function () {
     $(".list-modal-overlay").fadeIn();
   })
 
-  $("#quick-input").on("focus", function(){
+  $("#quick-input").on("focus", function () {
     if ($(this).val() === null || $(this).val() === "") {
       $("#arrow-circle-up").prop("disabled", true);
       $("#arrow-circle-up").removeClass("arrow-circle-up");
