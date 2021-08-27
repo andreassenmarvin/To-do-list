@@ -918,7 +918,7 @@ i {
     height: 75px;
     display: flex;
     align-items: center;
-    margin: 658px 0 0 400px;
+    margin: 500px 0 0 400px;
     border: 1px solid transparent;
     border-top: 1px solid rgb(233, 230, 230);
     background-color: white;
@@ -2435,7 +2435,7 @@ i {
         margin-left: 600px;
         background-color: white;
         width: 40%;
-        height: 67%;
+        height: 72%;
         z-index: 7;
     }
 
@@ -2989,7 +2989,7 @@ i {
         height: 75px;
         display: flex;
         align-items: center;
-        margin: 658px 0 0 400px;
+        margin: 615px 0 0 400px;
         border: 1px solid transparent;
         border-top: 1px solid rgb(233, 230, 230);
         background-color: white;
